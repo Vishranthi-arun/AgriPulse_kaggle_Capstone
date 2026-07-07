@@ -218,10 +218,10 @@ Run Pest Detection Skill
 Notify Farmer
 ```
 
-### Market Updates
+### Market Updates -> Every 1 Hour
 
 ```
-New Market Price
+New Market Price 
         ↓
 Run Market Timing Skill
         ↓
