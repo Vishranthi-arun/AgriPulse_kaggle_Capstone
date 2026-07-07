@@ -1,0 +1,105 @@
+{
+  "irrigation_history": [
+    {
+      "timestamp": "2026-07-07T04:02:46+00:00",
+      "summary": "Recommended skipping irrigation — 43% rain probability, 90% humidity, strong winds",
+      "crop": "rice",
+      "region": "Karnataka, India",
+      "weather_context": {
+        "temperature_c": 25.7,
+        "humidity_pct": 90,
+        "wind_speed_kmh": 31.1,
+        "rain_probability_pct": 43
+      },
+      "advice": "skip_irrigation",
+      "reasoning": "Rain probability 43% + humidity 90% indicates adequate soil moisture. Strong winds (31.1 km/h) would cause significant evaporation loss. Monsoon conditions favour skipping irrigation."
+    },
+    {
+      "timestamp": "2026-06-28T06:00:00+00:00",
+      "summary": "Recommended skipping irrigation — heavy rain forecast for next 2 days",
+      "crop": "rice",
+      "region": "Karnataka, India",
+      "weather_context": {
+        "rainfall_mm": 45,
+        "temperature_c": 28,
+        "humidity_pct": 85
+      },
+      "advice": "skip_irrigation"
+    },
+    {
+      "timestamp": "2026-06-25T06:00:00+00:00",
+      "summary": "Recommended morning irrigation — no rain expected, soil moisture low",
+      "crop": "rice",
+      "region": "Karnataka, India",
+      "weather_context": {
+        "rainfall_mm": 0,
+        "temperature_c": 32,
+        "humidity_pct": 55
+      },
+      "advice": "irrigate"
+    }
+  ],
+  "pest_alerts": [
+    {
+      "timestamp": "2026-07-07T04:05:00+00:00",
+      "summary": "MEDIUM risk: Rice Blast + Brown Planthopper — humidity 92%, temperature 30°C. Recurring pattern from June 26.",
+      "crop": "rice",
+      "region": "Karnataka, India",
+      "pest": "rice_blast_and_brown_planthopper",
+      "severity": "medium",
+      "weather_context": {
+        "temperature_c": 30,
+        "humidity_pct": 92
+      },
+      "recommended_action": "Apply neem oil (3–5%) spray at base of plants. Intermittent field draining. Scout daily for 5 days.",
+      "hitl_status": "awaiting_farmer_confirmation",
+      "note": "Recurring alert — similar BPH alert was raised on 2026-06-26. Humidity has increased from 85% to 92%."
+    },
+    {
+      "timestamp": "2026-06-26T10:00:00+00:00",
+      "summary": "Medium risk: Brown planthopper activity detected in region due to high humidity",
+      "crop": "rice",
+      "region": "Karnataka, India",
+      "pest": "brown_planthopper",
+      "severity": "medium",
+      "recommended_action": "Apply neem-based organic spray. Monitor for 3 days."
+    }
+  ],
+  "farmer_preferences": [
+    {
+      "farmer_id": "default",
+      "timestamp": "2026-06-20T08:00:00+00:00",
+      "crops": ["rice", "ragi"],
+      "region": "Karnataka, India",
+      "language": "en",
+      "notification_time": "06:00",
+      "notification_channel": "console"
+    }
+  ],
+  "notification_log": [
+    {
+      "timestamp": "2026-07-07T04:03:00+00:00",
+      "summary": "Auto-sent irrigation skip notification — LOW risk",
+      "risk_level": "LOW",
+      "hitl_action": "auto_sent",
+      "channel": "console",
+      "message": "🌧 AgriPulse Irrigation Alert: No irrigation needed today. Rain probability is 43%, humidity is 90%, and strong winds (31.1 km/h) would waste water. Monsoon conditions are favourable. Save water! (Source: Weather MCP · Open-Meteo)"
+    },
+    {
+      "timestamp": "2026-06-28T06:05:00+00:00",
+      "summary": "Sent irrigation skip reminder",
+      "risk_level": "LOW",
+      "hitl_action": "auto_sent",
+      "channel": "console",
+      "message": "Good morning! Heavy rain is forecast today and tomorrow. No irrigation needed — save water. (Source: Weather MCP)"
+    },
+    {
+      "timestamp": "2026-06-26T10:05:00+00:00",
+      "summary": "Sent pest alert — brown planthopper",
+      "risk_level": "MEDIUM",
+      "hitl_action": "confirmed_by_farmer",
+      "channel": "console",
+      "message": "Pest alert: Brown planthopper risk is medium due to high humidity. Recommended: neem-based spray. Confirm to proceed? (Source: Weather MCP)"
+    }
+  ]
+}
